@@ -259,6 +259,15 @@ footer .socials .icon:hover i {
   .filter-btns {
     gap: 0.5rem;
   }
+  header {
+    height: 70px;
+  }
+  nav .flag {
+    width: 80px;
+  }
+  .heading {
+    font-size: 18px;
+  }
 }
 
 /* ------------ 480px ------------ */
