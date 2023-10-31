@@ -46,8 +46,12 @@ nav .flag {
   height: calc(100vh - 100px);
 }
 
-.products .container {
+.products {
   margin: 0 3%;
+}
+
+.products .container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,6 +77,10 @@ nav .flag {
   font-weight: 500;
   margin-top: 1rem;
   color: grey;
+}
+
+.product-cards {
+  width: 100%;
 }
 
 .filter-btns {
@@ -128,6 +136,7 @@ nav .flag {
 }
 
 .cards {
+  width: 100%;
   margin: 3rem 0;
   display: grid;
   align-items: center;
@@ -233,5 +242,29 @@ footer .socials .icon:hover i {
 @media (max-width: 647px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* ------------ 560px ------------ */
+
+@media (max-width: 560px) {
+  .filter-btn {
+    font-size: 12px;
+  }
+}
+
+/* ------------ 530px ------------ */
+
+@media (max-width: 500px) {
+  .filter-btns {
+    gap: 0.5rem;
+  }
+}
+
+/* ------------ 480px ------------ */
+
+@media (max-width: 480px) {
+  .filter-btn {
+    font-size: 11px;
   }
 }
