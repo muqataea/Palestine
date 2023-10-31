@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+/* ------------ Styleing ------------ */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Tajawal", sans-serif;
+  background-color: #f1f1f1;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgb(128, 128, 128, 0.3);
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 3%;
+}
+
+nav .flag {
+  width: 100px;
+  border-radius: 7px;
+}
+
+.head-img {
+  width: 100%;
+  height: calc(100vh - 100px);
+}
+
+.products .container {
+  margin: 0 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-head {
+  margin: 7rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product-head h1,
+.product-head h4 {
+  margin: 0;
+  direction: rtl;
+}
+
+.product-head h4 {
+  font-weight: 500;
+  margin-top: 1rem;
+  color: grey;
+}
+
+.filter-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.filter-btn {
+  position: relative;
+  display: inline-block;
+  color: rgb(0, 0, 0, 0.5);
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  font-family: inherit;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.filter-btn::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 0%;
+  bottom: 1px;
+  left: -3px;
+  border-radius: 360px;
+  background-color: rgb(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.filter-btn:hover {
+  color: black;
+}
+
+.filter-btn:hover::before {
+  width: 80%;
+}
+
+.mixitup-control-active::before {
+  width: 80%;
+}
+
+.filter-btn.mixitup-control-active {
+  color: black;
+}
+
+.cards {
+  margin: 3rem 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 65%;
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 1.5% 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0;
+}
+footer p > a {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer p > a:hover {
+  text-decoration: underline;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .socials .icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .socials .icon i {
+  font-size: 23px;
+  color: rgb(0, 0, 0, 0.5);
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .socials .icon:hover i {
+  color: black;
+  scale: 1.1;
+}
+
+/* ------------ 1500px ------------ */
+
+@media (max-width: 1500px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ------------ 980px ------------ */
+
+@media (max-width: 980px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ------------ 730px ------------ */
+
+@media (max-width: 730px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ------------ 647px ------------ */
+
+@media (max-width: 647px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
