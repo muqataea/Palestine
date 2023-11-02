@@ -1,6 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
-
 /* ------------ Styleing ------------ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,8 +17,16 @@ body {
   color: black;
 }
 
+:root {}
+
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 header {
@@ -18,14 +34,14 @@ header {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255, 0.3);
+  background-color: rgb(255, 255, 255, .3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 20px 0 rgb(128, 128, 128, 0.3);
+  box-shadow: 0 0 20px 0 rgb(128, 128, 128, .3);
 }
 
 header nav {
@@ -44,6 +60,20 @@ nav .flag {
 .head-img {
   width: 100%;
   height: calc(100vh - 100px);
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .head-img {
+    object-fit: fill;
+    height: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .head-img {
+    height: 230px;
+  }
 }
 
 .products {
@@ -68,15 +98,22 @@ nav .flag {
 }
 
 .product-head h1,
-.product-head h4 {
+.product-head p {
   margin: 0;
   direction: rtl;
 }
 
-.product-head h4 {
+.product-head p {
   font-weight: 500;
+  font-size: 1.3rem;
   margin-top: 1rem;
-  color: grey;
+  color: #606060;
+}
+
+@media (max-width: 992px) {
+  .product-head p {
+    font-size: 1rem;
+  }
 }
 
 .product-cards {
@@ -88,14 +125,13 @@ nav .flag {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   gap: 1rem;
 }
 
 .filter-btn {
   position: relative;
   display: inline-block;
-  color: rgb(0, 0, 0, 0.5);
+  color: rgb(0, 0, 0, .7);
   background: none;
   outline: none;
   border: none;
@@ -104,7 +140,7 @@ nav .flag {
   letter-spacing: 0.4px;
   font-family: inherit;
   text-transform: uppercase;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .filter-btn::before {
@@ -171,13 +207,14 @@ footer {
 footer p {
   margin: 0;
 }
-footer p > a {
+
+footer p>a {
   color: black;
   font-weight: bold;
   cursor: pointer;
 }
 
-footer p > a:hover {
+footer p>a:hover {
   text-decoration: underline;
 }
 
@@ -257,18 +294,22 @@ footer .socials .icon:hover i {
 
 @media (max-width: 500px) {
   .filter-btns {
-    gap: 0.5rem;
+    gap: .5rem;
   }
+
   header {
     height: 70px;
   }
+
   nav .flag {
     width: 80px;
   }
+
   .heading {
     font-size: 18px;
   }
 }
+
 
 /* ------------ 480px ------------ */
 
