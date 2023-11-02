@@ -62,7 +62,7 @@ const productsData = [
     id: 12,
   },
   {
-    imgUrl: "assets/images/faberCastell.webp",
+    imgUrl: "assets/images/fabercastell.webp",
     type: "luxuries",
     id: 13,
   },
@@ -147,7 +147,7 @@ const productsData = [
     id: 29,
   },
   {
-    imgUrl: "assets/images/KFC.webp",
+    imgUrl: "assets/images/kfc.webp",
     type: "restaurants",
     id: 30,
   },
@@ -162,7 +162,7 @@ const productsData = [
     id: 32,
   },
   {
-    imgUrl: "assets/images/Maggi.webp",
+    imgUrl: "assets/images/maggi.webp",
     type: "companies",
     id: 33,
   },
@@ -222,7 +222,7 @@ const productsData = [
     id: 44,
   },
   {
-    imgUrl: "assets/images/pertPlus.webp",
+    imgUrl: "assets/images/pertplus.webp",
     type: "detergents",
     id: 45,
   },
@@ -307,7 +307,7 @@ const productsData = [
     id: 61,
   },
   {
-    imgUrl: "assets/images/Clorox.webp",
+    imgUrl: "assets/images/clorox.webp",
     type: "companies",
     id: 62,
   },
