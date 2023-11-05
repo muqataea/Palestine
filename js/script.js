@@ -553,9 +553,13 @@ let currentProductId = 1;
 
 
 // Selectors
-const productsContainer = document.querySelector(".product-cards .cards");
-const overlayEle = document.querySelector("body>.overlay")
-const overlayProductImgEle = document.querySelector("body>.overlay>img")
+const productsContainer = document.querySelector(".product-cards .cards"),
+  overlayEle = document.querySelector("body>.overlay"),
+  overlayProductImgEle = document.querySelector(".overlay .img-holder>img"),
+  overlayProductNameEle = document.querySelector(".overlay .product-name"),
+  sliderLeftArrow = document.querySelector(".overlay .arrow-left"),
+  sliderRightArrow = document.querySelector(".overlay .arrow-right");
+
 
 
 
@@ -608,8 +612,14 @@ function viewProductImg(id) {
 
 
 
-function changeProductImg() {
-  // console.log();
+function hideOverlay(e) {
+  const target = e.target
+  const isIconEle = target.tagName === "I"
+  const isLeftArrowEle = target === sliderLeftArrow
+  const isRightArrowEle = target === sliderRightArrow
+  const isOverlayClicked = !isLeftArrowEle && !isRightArrowEle && !isIconEle
+
+  if (isOverlayClicked) overlayEle.classList.remove("active")
 }
 
 
@@ -617,7 +627,7 @@ function changeProductImg() {
 
 
 // Events
-overlayEle.addEventListener("click", () => overlayEle.classList.remove("active"))
+overlayEle.addEventListener("click", (e) => hideOverlay(e))
 
 
 
@@ -631,6 +641,22 @@ window.addEventListener("keydown", (e) => {
   if (isRightKeyPressed && isNotLastProduct) currentProductId++
   if (isLeftKeyPressed && isNotFirstProduct) currentProductId--
 
+  viewProductImg(currentProductId)
+})
+
+
+
+sliderLeftArrow.addEventListener("click", () => {
+  const isNotFirstProduct = currentProductId > 1
+  if (isNotFirstProduct) currentProductId--
+  viewProductImg(currentProductId)
+})
+
+
+
+sliderRightArrow.addEventListener("click", () => {
+  const isNotLastProduct = currentProductId < productsData.length
+  if (isNotLastProduct) currentProductId++
   viewProductImg(currentProductId)
 })
 
