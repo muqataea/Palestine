@@ -548,6 +548,8 @@ const productsData = [
 
 // Selectors
 const productsContainer = document.querySelector(".product-cards .cards");
+const overlayEle = document.querySelector("body>.overlay")
+const overlayProductImgEle = document.querySelector("body>.overlay>img")
 
 
 
@@ -560,11 +562,14 @@ function createProductEle({ imgUrl, type, scale, id }) {
     <img
       src=${imgUrl}
       alt=${productName}
-      ${scale ? `style="transform: scale(${scale})"` : ""} />
+      ${scale ? `style="transform: scale(${scale})"` : ""}
+      onclick="viewProductImg(${id})" />
   </div>`;
 
   productsContainer.innerHTML += productStructure;
 }
+
+
 
 function getProductName(str) {
   const splittedWords = str.split("/");
@@ -573,11 +578,31 @@ function getProductName(str) {
   return nameOnly;
 }
 
+
+
 function displayProducts() {
-  productsData.forEach((productData) => createProductEle(productData));
+  productsData.forEach((productData) => {
+    createProductEle(productData)
+  });
 }
 displayProducts();
 
+
+
+function viewProductImg(id) {
+  const targetedProduct = productsData.filter(product => product.id === id)[0]
+  const productImgPath = targetedProduct?.imgUrl
+  const productName = getProductName(productImgPath)
+  overlayProductImgEle.src = productImgPath
+  overlayProductImgEle.alt = productName
+  overlayProductImgEle.title = productName
+  overlayEle.classList.add("active")
+}
+
+
+
+// Events
+overlayEle.addEventListener("click", () => overlayEle.classList.remove("active"))
 
 
 
