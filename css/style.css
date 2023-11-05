@@ -17,6 +17,10 @@ body {
   color: black;
 }
 
+body.overflow {
+  overflow: hidden;
+}
+
 .overlay {
   position: fixed;
   left: 0;
@@ -50,6 +54,13 @@ body {
   height: 350px;
 }
 
+@media (max-width: 768px) {
+  .overlay .img-holder img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
 .overlay> :is(.arrow-left, .arrow-right) {
   height: 100vh;
   display: flex;
@@ -63,6 +74,13 @@ body {
   transition: background-color .2s;
   background-color: rgba(0, 0, 0, .04);
 }
+
+@media (max-width: 768px) {
+  .overlay> :is(.arrow-left, .arrow-right) {
+    padding: 40px;
+  }
+}
+
 
 .overlay> :is(.arrow-left, .arrow-right):hover {
   background-color: rgba(0, 0, 0, .15);

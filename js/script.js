@@ -607,6 +607,7 @@ function viewProductImg(id) {
   overlayProductImgEle.alt = productName
   overlayProductImgEle.title = productName
   overlayEle.classList.add("active")
+  document.body.classList.add("overflow")
   currentProductId = id
 }
 
@@ -614,12 +615,16 @@ function viewProductImg(id) {
 
 function hideOverlay(e) {
   const target = e.target
-  const isIconEle = target.tagName === "I"
+  const targetTagName = target.tagName
+  const isIconOrImgEle = targetTagName === "I" || targetTagName === "IMG"
   const isLeftArrowEle = target === sliderLeftArrow
   const isRightArrowEle = target === sliderRightArrow
-  const isOverlayClicked = !isLeftArrowEle && !isRightArrowEle && !isIconEle
+  const isOverlayClicked = !isLeftArrowEle && !isRightArrowEle && !isIconOrImgEle
 
-  if (isOverlayClicked) overlayEle.classList.remove("active")
+  if (isOverlayClicked) {
+    overlayEle.classList.remove("active")
+    document.body.classList.remove("overflow")
+  }
 }
 
 
