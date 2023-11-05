@@ -546,6 +546,12 @@ const productsData = [
 
 
 
+// Variables
+let currentProductId = 1;
+
+
+
+
 // Selectors
 const productsContainer = document.querySelector(".product-cards .cards");
 const overlayEle = document.querySelector("body>.overlay")
@@ -597,12 +603,38 @@ function viewProductImg(id) {
   overlayProductImgEle.alt = productName
   overlayProductImgEle.title = productName
   overlayEle.classList.add("active")
+  currentProductId = id
 }
+
+
+
+function changeProductImg() {
+  // console.log();
+}
+
+
 
 
 
 // Events
 overlayEle.addEventListener("click", () => overlayEle.classList.remove("active"))
+
+
+
+window.addEventListener("keydown", (e) => {
+  const key = e.key
+  const isRightKeyPressed = key === "ArrowRight"
+  const isLeftKeyPressed = key === "ArrowLeft"
+  const isNotLastProduct = currentProductId < productsData.length
+  const isNotFirstProduct = currentProductId > 1
+
+  if (isRightKeyPressed && isNotLastProduct) currentProductId++
+  if (isLeftKeyPressed && isNotFirstProduct) currentProductId--
+
+  viewProductImg(currentProductId)
+})
+
+
 
 
 
