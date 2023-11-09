@@ -10,7 +10,7 @@ const productsData = [
   {
     imgUrl: "assets/images/kiri.webp",
     type: "dairy",
-    scale: .9,
+    scale: .8,
     id: 2,
   },
   {
@@ -75,7 +75,7 @@ const productsData = [
   {
     imgUrl: "assets/images/fabercastell.webp",
     type: "luxuries",
-    scale: .7,
+    scale: .8,
     id: 13,
   },
   {
@@ -127,7 +127,7 @@ const productsData = [
   {
     imgUrl: "assets/images/chipsy.webp",
     type: "luxuries",
-    scale: .8,
+    scale: .7,
     id: 22,
   },
   {
@@ -139,13 +139,13 @@ const productsData = [
   {
     imgUrl: "assets/images/cheetos.webp",
     type: "luxuries",
-    scale: .8,
+    scale: .7,
     id: 24,
   },
   {
     imgUrl: "assets/images/pringles.webp",
     type: "luxuries",
-    scale: .9,
+    scale: .7,
     id: 25,
   },
   {
@@ -157,7 +157,7 @@ const productsData = [
   {
     imgUrl: "assets/images/cornflakes.webp",
     type: "luxuries",
-    scale: .75,
+    scale: .5,
     id: 27,
   },
   {
@@ -181,7 +181,7 @@ const productsData = [
   {
     imgUrl: "assets/images/fridays.webp",
     type: "restaurants",
-    scale: .8,
+    scale: .7,
     id: 31,
   },
   {
@@ -192,7 +192,7 @@ const productsData = [
   {
     imgUrl: "assets/images/maggi.webp",
     type: "companies",
-    scale: .8,
+    scale: .75,
     id: 33,
   },
   {
@@ -204,13 +204,13 @@ const productsData = [
   {
     imgUrl: "assets/images/baraka.webp",
     type: "drinks",
-    scale: .65,
+    scale: .5,
     id: 35,
   },
   {
     imgUrl: "assets/images/evian.webp",
     type: "drinks",
-    scale: .8,
+    scale: .55,
     id: 36,
   },
   {
@@ -234,19 +234,19 @@ const productsData = [
   {
     imgUrl: "assets/images/aquafina.webp",
     type: "drinks",
-    scale: .6,
+    scale: .7,
     id: 40,
   },
   {
     imgUrl: "assets/images/bonux.webp",
     type: "detergents",
-    scale: .55,
+    scale: .45,
     id: 41,
   },
   {
     imgUrl: "assets/images/vanish.webp",
     type: "detergents",
-    scale: .6,
+    scale: .5,
     id: 42,
   },
   {
@@ -258,7 +258,7 @@ const productsData = [
   {
     imgUrl: "assets/images/nido.webp",
     type: "detergents",
-    scale: .6,
+    scale: .55,
     id: 44,
   },
   {
@@ -294,13 +294,13 @@ const productsData = [
   {
     imgUrl: "assets/images/omo.webp",
     type: "detergents",
-    scale: .75,
+    scale: .6,
     id: 50,
   },
   {
     imgUrl: "assets/images/johnson.webp",
     type: "detergents",
-    scale: .7,
+    scale: .6,
     id: 51,
   },
   {
@@ -312,6 +312,7 @@ const productsData = [
   {
     imgUrl: "assets/images/general.webp",
     type: "detergents",
+    scale: .6,
     id: 53,
   },
   {
@@ -329,13 +330,13 @@ const productsData = [
   {
     imgUrl: "assets/images/head-shoulders.webp",
     type: "detergents",
-    scale: .6,
+    scale: .55,
     id: 56,
   },
   {
     imgUrl: "assets/images/zest.webp",
     type: "detergents",
-    scale: .7,
+    scale: .6,
     id: 57,
   },
   {
@@ -377,7 +378,7 @@ const productsData = [
   {
     imgUrl: "assets/images/starbuks.webp",
     type: "companies",
-    scale: .7,
+    scale: .65,
     id: 64,
   },
   {
@@ -389,7 +390,7 @@ const productsData = [
     imgUrl: "assets/images/oreo.webp",
     type: "luxuries",
     scale: 1.1,
-    id: 66,
+    id: 65,
   },
   {
     imgUrl: "assets/images/vicks.webp",
@@ -417,7 +418,7 @@ const productsData = [
   {
     imgUrl: "assets/images/luvs.webp",
     type: "luxuries",
-    scale: .8,
+    scale: .75,
     id: 71,
   },
   {
@@ -446,7 +447,6 @@ const productsData = [
   {
     imgUrl: "assets/images/closeup.webp",
     type: "luxuries",
-    scale: .9,
     id: 76,
   },
   {
@@ -458,7 +458,7 @@ const productsData = [
   {
     imgUrl: "assets/images/raid.webp",
     type: "luxuries",
-    scale: .9,
+    scale: 1.2,
     id: 78,
   },
   {
@@ -494,7 +494,7 @@ const productsData = [
   {
     imgUrl: "assets/images/marlboro.webp",
     type: "luxuries",
-    scale: 1.1,
+    scale: .6,
     id: 84,
   },
   {
@@ -506,6 +506,7 @@ const productsData = [
   {
     imgUrl: "assets/images/vaseline.webp",
     type: "luxuries",
+    scale: .9,
     id: 86,
   },
   {
