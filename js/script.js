@@ -14,7 +14,7 @@ const productsData = [
     id: 2,
   },
   {
-    imgUrl: "assets/images/president.avif",
+    imgUrl: "assets/images/president.webp",
     type: "dairy",
     scale: .9,
     id: 3,
@@ -85,7 +85,7 @@ const productsData = [
     id: 14,
   },
   {
-    imgUrl: "assets/images/knorr.avif",
+    imgUrl: "assets/images/knorr.webp",
     type: "luxuries",
     scale: .8,
     id: 15,
@@ -137,13 +137,13 @@ const productsData = [
     id: 23,
   },
   {
-    imgUrl: "assets/images/cheetos.avif",
+    imgUrl: "assets/images/cheetos.webp",
     type: "luxuries",
     scale: .8,
     id: 24,
   },
   {
-    imgUrl: "assets/images/pringles.avif",
+    imgUrl: "assets/images/pringles.webp",
     type: "luxuries",
     scale: .9,
     id: 25,
@@ -155,7 +155,7 @@ const productsData = [
     id: 26,
   },
   {
-    imgUrl: "assets/images/cornflakes.avif",
+    imgUrl: "assets/images/cornflakes.webp",
     type: "luxuries",
     scale: .75,
     id: 27,
@@ -327,7 +327,7 @@ const productsData = [
     id: 55,
   },
   {
-    imgUrl: "assets/images/head&shoulders.webp",
+    imgUrl: "assets/images/head-shoulders.webp",
     type: "detergents",
     scale: .6,
     id: 56,
@@ -345,7 +345,7 @@ const productsData = [
     id: 58,
   },
   {
-    imgUrl: "assets/images/lifebouy.avif",
+    imgUrl: "assets/images/lifebouy.webp",
     type: "detergents",
     scale: .9,
     id: 59,
@@ -509,7 +509,7 @@ const productsData = [
     id: 86,
   },
   {
-    imgUrl: "assets/images/cocopops.webp",
+    imgUrl: "assets/images/coco-pops.webp",
     type: "luxuries",
     scale: .8,
     id: 87,
