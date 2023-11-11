@@ -10,11 +10,11 @@ const productsData = [
   {
     imgUrl: "assets/images/kiri.webp",
     type: "dairy",
-    scale: .9,
+    scale: .8,
     id: 2,
   },
   {
-    imgUrl: "assets/images/president.avif",
+    imgUrl: "assets/images/president.webp",
     type: "dairy",
     scale: .9,
     id: 3,
@@ -75,7 +75,7 @@ const productsData = [
   {
     imgUrl: "assets/images/fabercastell.webp",
     type: "luxuries",
-    scale: .7,
+    scale: .8,
     id: 13,
   },
   {
@@ -85,7 +85,7 @@ const productsData = [
     id: 14,
   },
   {
-    imgUrl: "assets/images/knorr.avif",
+    imgUrl: "assets/images/knorr.webp",
     type: "luxuries",
     scale: .8,
     id: 15,
@@ -127,7 +127,7 @@ const productsData = [
   {
     imgUrl: "assets/images/chipsy.webp",
     type: "luxuries",
-    scale: .8,
+    scale: .7,
     id: 22,
   },
   {
@@ -137,15 +137,15 @@ const productsData = [
     id: 23,
   },
   {
-    imgUrl: "assets/images/cheetos.avif",
+    imgUrl: "assets/images/cheetos.webp",
     type: "luxuries",
-    scale: .8,
+    scale: .7,
     id: 24,
   },
   {
-    imgUrl: "assets/images/pringles.avif",
+    imgUrl: "assets/images/pringles.webp",
     type: "luxuries",
-    scale: .9,
+    scale: .7,
     id: 25,
   },
   {
@@ -155,9 +155,9 @@ const productsData = [
     id: 26,
   },
   {
-    imgUrl: "assets/images/cornflakes.avif",
+    imgUrl: "assets/images/cornflakes.webp",
     type: "luxuries",
-    scale: .75,
+    scale: .5,
     id: 27,
   },
   {
@@ -181,7 +181,7 @@ const productsData = [
   {
     imgUrl: "assets/images/fridays.webp",
     type: "restaurants",
-    scale: .8,
+    scale: .7,
     id: 31,
   },
   {
@@ -192,7 +192,7 @@ const productsData = [
   {
     imgUrl: "assets/images/maggi.webp",
     type: "companies",
-    scale: .8,
+    scale: .75,
     id: 33,
   },
   {
@@ -204,13 +204,13 @@ const productsData = [
   {
     imgUrl: "assets/images/baraka.webp",
     type: "drinks",
-    scale: .65,
+    scale: .5,
     id: 35,
   },
   {
     imgUrl: "assets/images/evian.webp",
     type: "drinks",
-    scale: .8,
+    scale: .55,
     id: 36,
   },
   {
@@ -234,19 +234,19 @@ const productsData = [
   {
     imgUrl: "assets/images/aquafina.webp",
     type: "drinks",
-    scale: .6,
+    scale: .7,
     id: 40,
   },
   {
     imgUrl: "assets/images/bonux.webp",
     type: "detergents",
-    scale: .55,
+    scale: .45,
     id: 41,
   },
   {
     imgUrl: "assets/images/vanish.webp",
     type: "detergents",
-    scale: .6,
+    scale: .5,
     id: 42,
   },
   {
@@ -258,7 +258,7 @@ const productsData = [
   {
     imgUrl: "assets/images/nido.webp",
     type: "detergents",
-    scale: .6,
+    scale: .55,
     id: 44,
   },
   {
@@ -294,13 +294,13 @@ const productsData = [
   {
     imgUrl: "assets/images/omo.webp",
     type: "detergents",
-    scale: .75,
+    scale: .6,
     id: 50,
   },
   {
     imgUrl: "assets/images/johnson.webp",
     type: "detergents",
-    scale: .7,
+    scale: .6,
     id: 51,
   },
   {
@@ -312,6 +312,7 @@ const productsData = [
   {
     imgUrl: "assets/images/general.webp",
     type: "detergents",
+    scale: .6,
     id: 53,
   },
   {
@@ -327,15 +328,15 @@ const productsData = [
     id: 55,
   },
   {
-    imgUrl: "assets/images/head&shoulders.webp",
+    imgUrl: "assets/images/head-shoulders.webp",
     type: "detergents",
-    scale: .6,
+    scale: .55,
     id: 56,
   },
   {
     imgUrl: "assets/images/zest.webp",
     type: "detergents",
-    scale: .7,
+    scale: .6,
     id: 57,
   },
   {
@@ -345,7 +346,7 @@ const productsData = [
     id: 58,
   },
   {
-    imgUrl: "assets/images/lifebouy.avif",
+    imgUrl: "assets/images/lifebouy.webp",
     type: "detergents",
     scale: .9,
     id: 59,
@@ -377,7 +378,7 @@ const productsData = [
   {
     imgUrl: "assets/images/starbuks.webp",
     type: "companies",
-    scale: .7,
+    scale: .65,
     id: 64,
   },
   {
@@ -389,7 +390,7 @@ const productsData = [
     imgUrl: "assets/images/oreo.webp",
     type: "luxuries",
     scale: 1.1,
-    id: 66,
+    id: 65,
   },
   {
     imgUrl: "assets/images/vicks.webp",
@@ -417,7 +418,7 @@ const productsData = [
   {
     imgUrl: "assets/images/luvs.webp",
     type: "luxuries",
-    scale: .8,
+    scale: .75,
     id: 71,
   },
   {
@@ -446,7 +447,6 @@ const productsData = [
   {
     imgUrl: "assets/images/closeup.webp",
     type: "luxuries",
-    scale: .9,
     id: 76,
   },
   {
@@ -458,7 +458,7 @@ const productsData = [
   {
     imgUrl: "assets/images/raid.webp",
     type: "luxuries",
-    scale: .9,
+    scale: 1.2,
     id: 78,
   },
   {
@@ -494,7 +494,7 @@ const productsData = [
   {
     imgUrl: "assets/images/marlboro.webp",
     type: "luxuries",
-    scale: 1.1,
+    scale: .6,
     id: 84,
   },
   {
@@ -506,10 +506,11 @@ const productsData = [
   {
     imgUrl: "assets/images/vaseline.webp",
     type: "luxuries",
+    scale: .9,
     id: 86,
   },
   {
-    imgUrl: "assets/images/cocopops.webp",
+    imgUrl: "assets/images/coco-pops.webp",
     type: "luxuries",
     scale: .8,
     id: 87,
@@ -546,8 +547,20 @@ const productsData = [
 
 
 
+// Variables
+let currentProductId = 1;
+
+
+
+
 // Selectors
-const productsContainer = document.querySelector(".product-cards .cards");
+const productsContainer = document.querySelector(".product-cards .cards"),
+  overlayEle = document.querySelector("body>.overlay"),
+  overlayProductImgEle = document.querySelector(".overlay .img-holder>img"),
+  overlayProductNameEle = document.querySelector(".overlay .product-name"),
+  sliderLeftArrow = document.querySelector(".overlay .arrow-left"),
+  sliderRightArrow = document.querySelector(".overlay .arrow-right");
+
 
 
 
@@ -560,11 +573,14 @@ function createProductEle({ imgUrl, type, scale, id }) {
     <img
       src=${imgUrl}
       alt=${productName}
-      ${scale ? `style="transform: scale(${scale})"` : ""} />
+      ${scale ? `style="transform: scale(${scale})"` : ""}
+      onclick="viewProductImg(${id})" />
   </div>`;
 
   productsContainer.innerHTML += productStructure;
 }
+
+
 
 function getProductName(str) {
   const splittedWords = str.split("/");
@@ -573,10 +589,83 @@ function getProductName(str) {
   return nameOnly;
 }
 
+
+
 function displayProducts() {
-  productsData.forEach((productData) => createProductEle(productData));
+  productsData.forEach((productData) => {
+    createProductEle(productData)
+  });
 }
 displayProducts();
+
+
+
+function viewProductImg(id) {
+  const targetedProduct = productsData.filter(product => product.id === id)[0]
+  const productImgPath = targetedProduct?.imgUrl
+  const productName = getProductName(productImgPath)
+  overlayProductImgEle.src = productImgPath
+  overlayProductImgEle.alt = productName
+  overlayProductImgEle.title = productName
+  overlayEle.classList.add("active")
+  document.body.classList.add("overflow")
+  currentProductId = id
+}
+
+
+
+function hideOverlay(e) {
+  const target = e.target
+  const targetTagName = target.tagName
+  const isIconOrImgEle = targetTagName === "I" || targetTagName === "IMG"
+  const isLeftArrowEle = target === sliderLeftArrow
+  const isRightArrowEle = target === sliderRightArrow
+  const isOverlayClicked = !isLeftArrowEle && !isRightArrowEle && !isIconOrImgEle
+
+  if (isOverlayClicked) {
+    overlayEle.classList.remove("active")
+    document.body.classList.remove("overflow")
+  }
+}
+
+
+
+
+
+// Events
+overlayEle.addEventListener("click", (e) => hideOverlay(e))
+
+
+
+window.addEventListener("keydown", (e) => {
+  const key = e.key
+  const isRightKeyPressed = key === "ArrowRight"
+  const isLeftKeyPressed = key === "ArrowLeft"
+  const isNotLastProduct = currentProductId < productsData.length
+  const isNotFirstProduct = currentProductId > 1
+
+  if (isRightKeyPressed && isNotLastProduct) currentProductId++
+  if (isLeftKeyPressed && isNotFirstProduct) currentProductId--
+
+  viewProductImg(currentProductId)
+})
+
+
+
+sliderLeftArrow.addEventListener("click", () => {
+  const isNotFirstProduct = currentProductId > 1
+  if (isNotFirstProduct) currentProductId--
+  viewProductImg(currentProductId)
+})
+
+
+
+sliderRightArrow.addEventListener("click", () => {
+  const isNotLastProduct = currentProductId < productsData.length
+  if (isNotLastProduct) currentProductId++
+  viewProductImg(currentProductId)
+})
+
 
 
 
